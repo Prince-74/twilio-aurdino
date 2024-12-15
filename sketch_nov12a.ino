@@ -2,11 +2,11 @@
 #include <HTTPClient.h>
 
 // Wi-Fi credentials
-const char* ssid = "Redmi 12 5G";
-const char* password = "74171936";
+const char* ssid = ; // your ssid
+const char* password = ; // your password
 
 // Server URL
-const char* serverName = "http://192.168.130.138:3000/full-bin";  // Change to your Node.js server IP
+const char* serverName = "http://190.000.000.108:3000/full-bin";  // Change to your Node.js server IP
 
 // Define Ultrasonic Sensor pins
 #define TRIG_PIN 5
