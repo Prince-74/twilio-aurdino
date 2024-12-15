@@ -3,8 +3,8 @@ const bodyParser = require("body-parser");
 const twilio = require("twilio");
 
 // Twilio credentials
-const accountSid = 'AC5999f48e92da6b428d8f5f8f96dfaf89';  // Replace with your Twilio Account SID
-const authToken = '8668acc4e473a7f4f716f02a2c261dfa';
+const accountSid = 'ACXXXXXXXXXXXXXX';  // Replace with your Twilio Account SID
+const authToken = '866XXXXXXXXXXXXXX';
 const twilioClient = twilio(accountSid, authToken);
 
 // Express server setup
@@ -30,8 +30,8 @@ function sendSMS() {
   twilioClient.messages
     .create({
       body: "Alert: The waste bin is full. Please empty it.",
-      from: "+12512202603",
-      to: "+918865037375",
+      from: "+125XXXXX", // YOUR TWILO NUMBER
+      to: "+9188XXXXXXX", // RECIPENT NUMBER
     })
     .then((message) => console.log(`SMS sent: ${message.sid}`))
     .catch((error) => console.error(error));
