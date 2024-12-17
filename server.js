@@ -3,7 +3,7 @@ const bodyParser = require("body-parser");
 const twilio = require("twilio");
 
 // Twilio credentials
-const accountSid = 'ACXXXXXXXXXXXXXX';  // Replace with your Twilio Account SID
+const accountSid = 'ACXXXXXXXXXXXX';  // Replace with your Twilio Account SID
 const authToken = '866XXXXXXXXXXXXXX';
 const twilioClient = twilio(accountSid, authToken);
 
